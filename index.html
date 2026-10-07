@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nitya Mungalpara | Software Engineer</title>
+<meta name="description" content="Nitya Mungalpara: software engineer and final-year Computer Science (Professional) student at RMIT, AWS Certified. Shipped an Italian e-invoicing compliance system for an industry client, full-stack Spring Boot and React platforms, and deep learning, RAG and reinforcement learning projects. Open to 2027 industry placements and graduate roles across Australia.">
+<meta name="keywords" content="Nitya Mungalpara, Software Engineer, Graduate Software Engineer, RMIT, Computer Science, Melbourne, Java, Spring Boot, Python, React, AWS Certified Cloud Practitioner, Machine Learning, PyTorch, ERPNext, Frappe, Industry Placement 2027">
+<meta name="author" content="Nitya Mungalpara">
+<meta property="og:title" content="Nitya Mungalpara | Software Engineer">
+<meta property="og:description" content="Final-year CS (Professional) at RMIT · AWS Certified · industry client delivery · full-stack, AI/ML and cloud. Open to 2027 placements and graduate roles.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/nitya.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2300d4a6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='26' text-anchor='middle' fill='white'%3ENM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Nitya Mungalpara","jobTitle":"Software Engineer","email":"mailto:nitya25mungalpara@gmail.com",
+"address":{"@type":"PostalAddress","addressLocality":"Melbourne","addressRegion":"VIC","addressCountry":"AU"},
+"alumniOf":{"@type":"CollegeOrUniversity","name":"RMIT University"},
+"sameAs":["https://www.linkedin.com/in/nitya-mungalpara","https://github.com/nityamungalpara"],
+"knowsAbout":["Java","Spring Boot","Python","React","AWS","PyTorch","Machine Learning","ERPNext","REST APIs","CI/CD"],
+"hasCredential":[{"@type":"EducationalOccupationalCredential","name":"AWS Certified Cloud Practitioner","recognizedBy":{"@type":"Organization","name":"Amazon Web Services"}}]}
+</script>
+<style>
+:root{
+  --bg:#0b0d12; --bg2:#10131a; --panel:#141822; --panel2:#1a1f2b; --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.14);
+  --text:#eef1f7; --muted:rgba(238,241,247,.62); --faint:rgba(238,241,247,.38);
+  --yellow:#ffc427; --purple:#8b6cff; --green:#00d4a6; --blue:#3fa9ff; --pink:#ff5c8a; --orange:#ff8a3d;
+  --radius:20px; --mono:'JetBrains Mono',ui-monospace,monospace; --display:'Space Grotesk','Inter',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::selection{background:var(--purple);color:#fff}
+
+/* backdrop */
+.bg-grid{position:fixed;inset:0;z-index:-2;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 30%,transparent 75%);opacity:.5}
+.bg-orb{position:fixed;z-index:-1;border-radius:50%;filter:blur(110px);opacity:.28;pointer-events:none}
+.orb1{width:520px;height:520px;background:var(--purple);top:-160px;left:-120px;animation:float 18s ease-in-out infinite}
+.orb2{width:460px;height:460px;background:var(--green);bottom:-180px;right:-120px;animation:float 22s ease-in-out infinite reverse}
+.orb3{width:320px;height:320px;background:var(--blue);top:40%;left:55%;opacity:.14;animation:float 26s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(60px,40px)}}
+.cursor-glow{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(139,108,255,.13),transparent 65%);transform:translate(-50%,-50%);transition:opacity .3s}
+
+/* window frame */
+.screen{max-width:1320px;margin:28px auto;border:1px solid var(--line2);border-radius:26px;background:rgba(16,19,26,.72);backdrop-filter:blur(18px);box-shadow:0 40px 120px rgba(0,0,0,.55)}
+.screen-header{display:flex;align-items:center;gap:16px;padding:14px 22px;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;background:rgba(16,19,26,.86);backdrop-filter:blur(18px);border-radius:26px 26px 0 0}
+.dots{display:flex;gap:8px}.dots i{width:12px;height:12px;border-radius:50%;display:block}
+.dots i:nth-child(1){background:#ff5f57}.dots i:nth-child(2){background:#febc2e}.dots i:nth-child(3){background:#28c840}
+.url{flex:1;text-align:center;font-family:var(--mono);font-size:12.5px;color:var(--faint)}
+.url b{color:var(--muted);font-weight:500}
+.menu-btn{display:none;background:none;border:1px solid var(--line2);color:var(--text);border-radius:10px;padding:6px 10px;font-size:13px;cursor:pointer}
+.layout{display:grid;grid-template-columns:270px 1fr}
+
+/* sidebar */
+.side{position:sticky;top:57px;align-self:start;height:calc(100vh - 85px);padding:26px 20px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:22px}
+.person{display:flex;align-items:center;gap:12px}
+.ava{position:relative;width:54px;height:54px;flex:none}
+.ava img{width:54px;height:54px;border-radius:16px;object-fit:cover;transition:transform .4s}
+.ava:hover img{transform:rotate(-8deg) scale(1.05)}
+.status{position:absolute;right:-3px;bottom:-3px;width:15px;height:15px;border-radius:50%;background:var(--green);border:3px solid var(--bg2);box-shadow:0 0 0 0 rgba(0,212,166,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(0,212,166,0)}100%{box-shadow:0 0 0 0 rgba(0,212,166,0)}}
+.person b{display:block;font-size:15px}
+.person span{font-size:13px;color:var(--muted)}
+.nav{display:flex;flex-direction:column;gap:4px}
+.nav a{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;font-size:14.5px;font-weight:500;color:var(--muted);transition:.25s}
+.nav a i{width:9px;height:9px;border-radius:50%;transform:scale(.55);transition:transform .3s}
+.nav a:hover,.nav a.active{color:var(--text);background:rgba(255,255,255,.05)}
+.nav a:hover i,.nav a.active i{transform:scale(1.1)}
+.side-foot{margin-top:auto;display:flex;flex-direction:column;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:14px;font-weight:600;font-size:14.5px;cursor:pointer;border:1px solid transparent;transition:transform .2s,box-shadow .3s,background .3s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--purple),#5b8cff);color:#fff;box-shadow:0 10px 30px rgba(139,108,255,.35)}
+.btn-primary:hover{box-shadow:0 14px 40px rgba(139,108,255,.5)}
+.btn-ghost{border-color:var(--line2);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.btn svg{width:16px;height:16px}
+.socials{display:flex;gap:8px}
+.socials a{flex:1;display:grid;place-items:center;height:40px;border-radius:12px;border:1px solid var(--line);color:var(--muted);transition:.25s}
+.socials a:hover{color:var(--text);border-color:var(--line2);background:rgba(255,255,255,.05)}
+.socials svg{width:18px;height:18px}
+
+/* main */
+main{padding:46px 54px 60px;min-width:0}
+section{padding:56px 0;scroll-margin-top:70px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:6px 13px;border-radius:999px;font-size:12.5px;font-weight:600;border:1px solid}
+.chip.green{color:var(--green);border-color:rgba(0,212,166,.3);background:rgba(0,212,166,.08)}
+.chip.purple{color:var(--purple);border-color:rgba(139,108,255,.3);background:rgba(139,108,255,.08)}
+.chip.yellow{color:var(--yellow);border-color:rgba(255,196,39,.3);background:rgba(255,196,39,.08)}
+.chip.blue{color:var(--blue);border-color:rgba(63,169,255,.3);background:rgba(63,169,255,.08)}
+.chip.pink{color:var(--pink);border-color:rgba(255,92,138,.3);background:rgba(255,92,138,.08)}
+.chip.orange{color:var(--orange);border-color:rgba(255,138,61,.3);background:rgba(255,138,61,.08)}
+.live-dot{width:7px;height:7px;border-radius:50%;background:currentColor;animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.25}}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;line-height:1.12}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:30px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(28px,3.4vw,40px);margin-top:12px}
+.sec-head p{color:var(--muted);max-width:520px}
+.grad{background:linear-gradient(120deg,var(--purple),var(--blue) 45%,var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.35fr .9fr;gap:46px;align-items:center;padding-top:20px}
+.hero h1{font-size:clamp(36px,5vw,62px);margin:20px 0 18px}
+.rotator{display:block;font-size:clamp(20px,2.3vw,28px);font-family:var(--mono);font-weight:500;color:var(--muted);margin-bottom:20px;min-height:1.4em}
+.rotator .word{color:var(--green)}
+.caret{display:inline-block;width:2px;height:1em;background:var(--green);margin-left:3px;vertical-align:-2px;animation:blink 1s infinite}
+.hero p.lead{font-size:17px;color:var(--muted);max-width:620px}
+.hero p.lead b{color:var(--text);font-weight:600}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.portrait{position:relative;aspect-ratio:1;max-width:400px;justify-self:center;width:100%}
+.portrait::before{content:"";position:absolute;inset:-3px;border-radius:34px;background:conic-gradient(from var(--a,0deg),var(--purple),var(--blue),var(--green),var(--yellow),var(--pink),var(--purple));animation:spin 6s linear infinite;filter:blur(.5px)}
+@property --a{syntax:'<angle>';inherits:false;initial-value:0deg}
+@keyframes spin{to{--a:360deg}}
+.portrait img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:31px;border:6px solid var(--bg2)}
+.float-tag{position:absolute;padding:10px 14px;border-radius:14px;background:rgba(20,24,34,.92);border:1px solid var(--line2);backdrop-filter:blur(10px);font-size:13px;font-weight:600;display:flex;align-items:center;gap:8px;box-shadow:0 14px 40px rgba(0,0,0,.4);animation:bob 5s ease-in-out infinite}
+.float-tag small{display:block;font-weight:500;color:var(--muted);font-size:11.5px}
+.ft1{top:54%;left:-20%}.ft2{top:72%;right:-16%;animation-delay:-2.5s}.ft3{bottom:-7%;left:12%;animation-delay:-1.2s}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.emoji{font-size:20px}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:58px}
+.stat{padding:20px;border-radius:18px;background:var(--panel);border:1px solid var(--line);position:relative;overflow:hidden}
+.stat b{display:block;font-family:var(--display);font-size:32px;line-height:1.1}
+.stat span{font-size:13px;color:var(--muted)}
+.stat::after{content:"";position:absolute;inset:auto -30% -60% auto;width:120px;height:120px;border-radius:50%;filter:blur(40px);opacity:.35;background:var(--c)}
+
+/* manifesto */
+.manifesto{margin-top:20px;padding:30px 34px;border-radius:var(--radius);border:1px solid var(--line);background:linear-gradient(135deg,rgba(139,108,255,.1),rgba(0,212,166,.06));display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center}
+.manifesto .big{font-size:42px}
+.manifesto h3{font-size:22px;margin-bottom:6px}
+.manifesto p{color:var(--muted)}
+
+/* quick links */
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.qlink{position:relative;overflow:hidden;padding:22px;border-radius:var(--radius);border:1px solid var(--line);min-height:150px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .3s,border-color .3s;background:color-mix(in srgb,var(--c) 7%,transparent)}
+.qlink:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--c) 45%,transparent)}
+.qlink h3{font-size:19px;position:relative;z-index:1}
+.qlink .arrow{position:relative;z-index:1;width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 18%,transparent);color:var(--c);align-self:flex-end;transition:transform .3s}
+.qlink:hover .arrow{transform:rotate(45deg)}
+.qlink .glow{position:absolute;width:160px;height:160px;border-radius:50%;background:var(--c);filter:blur(70px);opacity:.18;right:-40px;bottom:-60px;transition:opacity .3s}
+.qlink:hover .glow{opacity:.4}
+
+/* featured */
+.featured{display:grid;grid-template-columns:1.1fr 1fr;border-radius:26px;overflow:hidden;border:1px solid var(--line2);background:var(--panel)}
+.feat-art{position:relative;min-height:340px;background:linear-gradient(135deg,#0f3d2e,#14181f 55%,#4a1420);display:grid;place-items:center;overflow:hidden}
+.feat-art .flag{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,146,70,.35) 0 33.3%,rgba(255,255,255,.06) 33.3% 66.6%,rgba(206,43,55,.35) 66.6%);mask-image:linear-gradient(180deg,#000,transparent)}
+.invoice{position:relative;width:78%;max-width:360px;background:#0d1017;border:1px solid var(--line2);border-radius:16px;padding:18px;font-family:var(--mono);font-size:12px;box-shadow:0 30px 70px rgba(0,0,0,.5);transform:rotate(-3deg)}
+.invoice .row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line)}
+.invoice .ok{color:var(--green)}.invoice .bad{color:var(--pink)}
+.invoice .verdict{margin-top:12px;padding:9px 10px;border-radius:10px;background:rgba(255,92,138,.1);color:var(--pink);border:1px solid rgba(255,92,138,.3)}
+.feat-body{padding:34px}
+.feat-body h3{font-size:28px;margin:14px 0 10px}
+.feat-body p{color:var(--muted)}
+.ticks{list-style:none;margin:18px 0;display:grid;gap:9px}
+.ticks li{position:relative;padding-left:28px;color:var(--muted);font-size:15px}
+.ticks li b{color:var(--text);font-weight:600}
+.ticks li::before{content:"";position:absolute;left:0;top:5px;width:17px;height:17px;border-radius:6px;background:rgba(0,212,166,.15) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300d4a6' stroke-width='3.5'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/11px no-repeat}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{font-family:var(--mono);font-size:11.5px;padding:4px 9px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--muted)}
+
+/* timeline */
+.timeline{position:relative;display:grid;gap:16px}
+.timeline::before{content:"";position:absolute;left:21px;top:10px;bottom:10px;width:2px;background:linear-gradient(var(--purple),var(--green),transparent)}
+.job{position:relative;display:grid;grid-template-columns:44px 1fr;gap:18px}
+.job .node{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:20px;background:var(--panel2);border:1px solid var(--line2);z-index:1}
+.job .card{padding:22px 24px;border-radius:18px;background:var(--panel);border:1px solid var(--line);transition:border-color .3s,transform .3s}
+.job .card:hover{border-color:var(--line2);transform:translateX(4px)}
+.job-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.job h3{font-size:19px}
+.job .org{color:var(--muted);font-size:14.5px}
+.job .when{font-family:var(--mono);font-size:12.5px;color:var(--faint)}
+.job ul{margin:12px 0 12px 18px;color:var(--muted);font-size:15px;display:grid;gap:5px}
+.job ul b{color:var(--text);font-weight:600}
+
+/* projects */
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{font:inherit;font-size:13.5px;font-weight:600;padding:8px 15px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--muted);cursor:pointer;transition:.25s}
+.filters button:hover{color:var(--text)}
+.filters button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pcard{display:flex;flex-direction:column;border-radius:20px;overflow:hidden;background:var(--panel);border:1px solid var(--line);cursor:pointer;transition:transform .35s,border-color .35s,box-shadow .35s;text-align:left;font:inherit;color:inherit}
+.pcard:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--c) 50%,transparent);box-shadow:0 24px 60px -20px color-mix(in srgb,var(--c) 55%,transparent)}
+.pcard.hide{display:none}
+.pthumb{position:relative;height:170px;overflow:hidden;display:grid;place-items:center;background:radial-gradient(circle at 30% 20%,color-mix(in srgb,var(--c) 45%,transparent),transparent 60%),linear-gradient(135deg,var(--panel2),#0e1117)}
+.pthumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.pcard:hover .pthumb img,.pcard:hover .pthumb .glyph{transform:scale(1.07)}
+.glyph{font-size:58px;transition:transform .5s;filter:drop-shadow(0 10px 25px rgba(0,0,0,.5))}
+.pthumb .code{position:absolute;left:14px;bottom:10px;font-family:var(--mono);font-size:11px;color:rgba(255,255,255,.45)}
+.badge{position:absolute;top:12px;left:12px;font-size:11.5px;font-weight:700;padding:4px 10px;border-radius:999px;background:rgba(0,0,0,.55);border:1px solid var(--line2);backdrop-filter:blur(6px)}
+.badge.hot{color:var(--yellow)}
+.pbody{padding:18px 20px 20px;display:flex;flex-direction:column;gap:9px;flex:1}
+.pbody h3{font-size:18px}
+.pbody p{color:var(--muted);font-size:14.5px;flex:1}
+.pmore{font-size:13px;font-weight:600;color:var(--c);display:flex;align-items:center;gap:6px}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(5,6,10,.7);backdrop-filter:blur(8px)}
+.modal.open{display:flex;animation:fade .25s}
+@keyframes fade{from{opacity:0}}
+.mbox{position:relative;width:min(760px,100%);max-height:90vh;overflow:auto;border-radius:24px;background:var(--bg2);border:1px solid var(--line2);box-shadow:0 40px 120px rgba(0,0,0,.6);animation:pop .3s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes pop{from{transform:translateY(20px) scale(.97)}}
+.mhead{padding:28px 30px 0}
+.mhead h3{font-size:28px;margin:12px 0 4px}
+.mhead .sub{color:var(--muted)}
+.mclose{position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:12px;border:1px solid var(--line2);background:var(--panel);color:var(--text);font-size:20px;cursor:pointer;z-index:2}
+.mvideo{margin:20px 30px 0;border-radius:16px;overflow:hidden;border:1px solid var(--line2)}
+.mvideo video{width:100%;display:block}
+.mcontent{padding:22px 30px 30px;display:grid;gap:18px}
+.mcontent h4{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:6px;font-family:var(--mono);font-weight:500}
+.mcontent p{color:var(--muted)}
+.mlinks{display:flex;gap:10px;flex-wrap:wrap}
+
+/* coursework */
+.courses{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.course{padding:20px;border-radius:18px;background:var(--panel);border:1px solid var(--line);transition:.3s;position:relative;overflow:hidden}
+.course:hover{border-color:var(--line2);transform:translateY(-3px)}
+.course .code{font-family:var(--mono);font-size:11.5px;color:var(--c)}
+.course h3{font-size:16.5px;margin:6px 0 8px}
+.course p{font-size:14px;color:var(--muted)}
+.course::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c);opacity:.7}
+.edu{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;padding:26px 28px;border-radius:22px;background:linear-gradient(135deg,rgba(63,169,255,.1),rgba(139,108,255,.08));border:1px solid var(--line2);margin-bottom:22px}
+.edu .logo{width:64px;height:64px;border-radius:18px;background:#e60028;display:grid;place-items:center;font-weight:800;font-family:var(--display);font-size:17px;color:#fff;letter-spacing:.02em}
+.edu h3{font-size:21px}
+.edu p{color:var(--muted);font-size:14.5px}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sk{padding:22px;border-radius:20px;background:var(--panel);border:1px solid var(--line)}
+.sk h3{font-size:16px;display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.sk h3 span{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 16%,transparent);font-size:16px}
+.sk .tags .tag{font-size:12.5px;padding:5px 10px;color:var(--text)}
+.marquee{margin:30px 0 0;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);border-block:1px solid var(--line);padding:14px 0}
+.track{display:flex;gap:40px;width:max-content;animation:scroll 40s linear infinite;font-family:var(--display);font-size:22px;font-weight:600;color:var(--faint)}
+.track span:nth-child(3n){color:var(--muted)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.certs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+.cert{display:flex;gap:14px;align-items:center;padding:18px;border-radius:18px;background:var(--panel);border:1px solid var(--line)}
+.cert .ic{width:46px;height:46px;flex:none;border-radius:14px;display:grid;place-items:center;font-size:22px;background:color-mix(in srgb,var(--c) 15%,transparent)}
+.cert b{display:block;font-size:14.5px;line-height:1.3}
+.cert span{font-size:12.5px;color:var(--muted)}
+
+/* beyond */
+.beyond{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}
+.bcard{padding:26px;border-radius:22px;background:var(--panel);border:1px solid var(--line)}
+.bcard h3{font-size:20px;margin:12px 0 8px}
+.bcard p{color:var(--muted);font-size:15px}
+.venues{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+
+/* contact */
+.contact{position:relative;overflow:hidden;padding:48px;border-radius:28px;border:1px solid var(--line2);background:radial-gradient(circle at 15% 20%,rgba(139,108,255,.28),transparent 50%),radial-gradient(circle at 90% 90%,rgba(0,212,166,.22),transparent 50%),var(--panel)}
+.contact h2{font-size:clamp(30px,4vw,48px);max-width:720px}
+.contact p{color:var(--muted);max-width:640px;margin:14px 0 26px;font-size:16.5px}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.cbox{padding:16px 18px;border-radius:16px;background:rgba(0,0,0,.25);border:1px solid var(--line);font-size:14px}
+.cbox small{display:block;font-family:var(--mono);font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,30px);opacity:0;padding:12px 20px;border-radius:14px;background:var(--green);color:#04261d;font-weight:700;transition:.35s;z-index:200}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+footer{padding:26px 54px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--faint);font-size:13px;font-family:var(--mono)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1100px){
+  .grid,.courses,.skills{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .quick,.certs{grid-template-columns:repeat(2,1fr)}
+  .featured,.beyond{grid-template-columns:1fr}
+  .ft1{left:-8%}.ft2{right:-6%}.ft3{display:none}
+}
+@media (max-width:860px){
+  .screen{margin:0;border-radius:0;border:0}
+  .screen-header{border-radius:0}
+  .menu-btn{display:block}
+  .layout{grid-template-columns:1fr}
+  .side{position:fixed;top:57px;left:0;bottom:0;height:auto;width:280px;background:var(--bg2);z-index:30;transform:translateX(-100%);transition:transform .35s;border-right:1px solid var(--line2)}
+  .side.open{transform:none}
+  main{padding:20px 16px 40px}
+  .hero{grid-template-columns:1fr;gap:34px}
+  .portrait{max-width:300px;order:-1}
+  .ft1{left:-6%;top:56%}.ft2{right:-6%;top:76%}
+  section{padding:42px 0}
+  .contact{padding:30px 22px}
+  .contact-grid{grid-template-columns:1fr}
+  .edu{grid-template-columns:auto 1fr}
+  .edu .chip{grid-column:1/-1;justify-self:start}
+  footer{padding:22px 16px}
+}
+@media (max-width:600px){
+  .grid,.courses,.skills,.quick,.certs{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .manifesto{grid-template-columns:1fr;padding:24px}
+  .feat-body{padding:24px}
+  .url{font-size:11px}
+  .float-tag{font-size:12px;padding:8px 10px}
+  .ft3{display:none}
+  .job{grid-template-columns:1fr}.job .node{display:none}.timeline::before{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div><div class="bg-orb orb1"></div><div class="bg-orb orb2"></div><div class="bg-orb orb3"></div>
+<div class="cursor-glow" id="glow"></div>
+
+<div class="screen">
+  <div class="screen-header">
+    <div class="dots"><i></i><i></i><i></i></div>
+    <div class="url">~/nitya-mungalpara <b>— software engineer</b></div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰ Menu</button>
+  </div>
+
+  <div class="layout">
+    <aside class="side" id="side">
+      <div class="person">
+        <a href="#home" class="ava"><img src="assets/nitya-face.webp" alt="Nitya Mungalpara" onerror="this.src='assets/nitya-face.jpg'"><span class="status" title="Open to work"></span></a>
+        <div><b>Nitya Mungalpara</b><span>Software Engineer · Melbourne</span></div>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#home" class="active"><i style="background:var(--text)"></i>Home</a>
+        <a href="#work"><i style="background:var(--yellow)"></i>Experience</a>
+        <a href="#projects"><i style="background:var(--purple)"></i>Projects</a>
+        <a href="#study"><i style="background:var(--blue)"></i>Education</a>
+        <a href="#skills"><i style="background:var(--green)"></i>Skills</a>
+        <a href="#beyond"><i style="background:var(--orange)"></i>Beyond code</a>
+        <a href="#contact"><i style="background:var(--pink)"></i>Contact</a>
+      </nav>
+      <div class="side-foot">
+        <a class="btn btn-primary" href="assets/Nitya_Mungalpara_CV.pdf" target="_blank" rel="noopener">Download CV
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/nitya-mungalpara" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+          <a href="https://github.com/nityamungalpara" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0012 .3"/></svg></a>
+          <a href="mailto:nitya25mungalpara@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" style="padding-top:10px">
+        <div class="hero">
+          <div class="rv">
+            <span class="chip green"><span class="live-dot"></span>Open to 2027 industry placements &amp; graduate roles</span>
+            <h1>Hi, I'm Nitya.<br>I ship software that <span class="grad">has to be right.</span></h1>
+            <span class="rotator"><span class="word" id="rot">Software Engineer</span><span class="caret"></span></span>
+            <p class="lead">Final-year <b>Computer Science (Professional)</b> at RMIT and <b>AWS Certified</b>. I've delivered a <b>tax-compliance engine for a real client in Italy</b>, led a <b>six-person Spring Boot + React platform</b> through CI/CD to a live client demo, and built deep learning, RAG and reinforcement-learning systems from the ground up. I also teach: <b>50+ students</b> tutored in Python.</p>
+            <div class="cta">
+              <a href="#projects" class="btn btn-primary">See my work
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+              <button class="btn btn-ghost" data-open="campushub">▶&nbsp; Watch the Campus Hub demo</button>
+              <a href="#contact" class="btn btn-ghost">Get in touch</a>
+            </div>
+          </div>
+          <div class="portrait rv">
+            <img src="assets/nitya.webp" alt="Portrait of Nitya Mungalpara" onerror="this.src='assets/nitya.jpg'">
+            <div class="float-tag ft1"><span class="emoji">🧾</span><div>Industry client<small>e-invoicing compliance</small></div></div>
+            <div class="float-tag ft2"><span class="emoji">☁️</span><div>AWS Certified<small>Cloud Practitioner</small></div></div>
+            <div class="float-tag ft3"><span class="emoji">🤖</span><div>RMIT Rover Team<small>software subsystem</small></div></div>
+          </div>
+        </div>
+
+        <div class="stats rv">
+          <div class="stat" style="--c:var(--purple)"><b><span data-count="50">0</span>+</b><span>students tutored in Python</span></div>
+          <div class="stat" style="--c:var(--green)"><b><span data-count="3">0</span></b><span>roles held at RMIT</span></div>
+          <div class="stat" style="--c:var(--yellow)"><b><span data-count="12">0</span>+</b><span>projects built and shipped</span></div>
+          <div class="stat" style="--c:var(--blue)"><b><span data-count="5">0</span></b><span>CS subjects mentored</span></div>
+          <div class="stat" style="--c:var(--pink)"><b><span data-count="6">0</span></b><span>person team coordinated</span></div>
+        </div>
+
+        <div class="manifesto rv">
+          <div class="big">🎯</div>
+          <div><h3>How I work</h3><p>Understand the domain before writing code, test what I build even when nobody asks, and leave documentation the next person can use. I treat university projects like client work, because two of mine had real clients.</p></div>
+        </div>
+
+        <div class="quick rv">
+          <a class="qlink" href="#work" style="--c:var(--yellow)"><span class="chip yellow">Experience</span><h3>Client work, teaching &amp; robotics</h3><span class="arrow">↗</span><span class="glow"></span></a>
+          <a class="qlink" href="#projects" style="--c:var(--purple)"><span class="chip purple">Projects</span><h3>12+ builds across web, AI &amp; systems</h3><span class="arrow">↗</span><span class="glow"></span></a>
+          <a class="qlink" href="#skills" style="--c:var(--green)"><span class="chip green">Skills</span><h3>Java · Python · AWS · PyTorch</h3><span class="arrow">↗</span><span class="glow"></span></a>
+          <a class="qlink" href="#contact" style="--c:var(--pink)"><span class="chip pink">Contact</span><h3>Let's build something together</h3><span class="arrow">↗</span><span class="glow"></span></a>
+        </div>
+      </section>
+
+      <!-- FEATURED -->
+      <section id="featured">
+        <div class="sec-head rv"><div><span class="chip yellow">★ Featured engagement</span><h2>Real client. Real regulations. Real stakes.</h2></div><p>The work I'd put in front of an engineering manager first.</p></div>
+        <div class="featured rv">
+          <div class="feat-art">
+            <div class="flag"></div>
+            <div class="invoice">
+              <div style="color:var(--faint);margin-bottom:8px">// FatturaPA pre-submission check (illustration)</div>
+              <div class="row"><span>CedentePrestatore</span><span class="ok">✓ valid</span></div>
+              <div class="row"><span>PartitaIVA</span><span class="ok">✓ 11 digits</span></div>
+              <div class="row"><span>CodiceDestinatario</span><span class="ok">✓ format</span></div>
+              <div class="row"><span>AliquotaIVA</span><span class="bad">✗ invalid</span></div>
+              <div class="verdict">REJECTED · line 3: VAT rate "23" is not a permitted value. Fix the item's tax template and resubmit.</div>
+            </div>
+          </div>
+          <div class="feat-body">
+            <span class="chip green">SD Companies · Italy · Mar–Jun 2026</span>
+            <h3>ERPNext e-invoicing compliance engine</h3>
+            <p>Backend developer and documentation lead in a four-person team delivering a production ERPNext system for an Italian business, through RMIT's industry project program. We met the client directly on a regular schedule throughout.</p>
+            <ul class="ticks">
+              <li><b>Validation layer</b> that checks every outbound invoice against Italy's mandated <b>FatturaPA</b> standard and the rules enforced by the <b>Sistema di Interscambio (SDI)</b>, before it is submitted</li>
+              <li><b>Rejects with reasons people can act on</b>: names the exact record and the invalid value, not a generic error</li>
+              <li><b>CRM-style sales pipeline</b> on Frappe with role-based access control and workflow automation</li>
+              <li><b>Turned the client's tax requirements into system behaviour</b>, and wrote the documentation the client and team worked from</li>
+            </ul>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Frappe</span><span class="tag">ERPNext</span><span class="tag">FatturaPA / SDI</span><span class="tag">RBAC</span><span class="tag">Workflow automation</span><span class="tag">Requirements</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="work">
+        <div class="sec-head rv"><div><span class="chip yellow">Experience</span><h2>Where I've been <span class="grad">delivering</span></h2></div><p>Client engineering, robotics, two teaching roles and front-line service, all at once and alongside full-time study.</p></div>
+        <div class="timeline">
+          <div class="job rv"><div class="node">🧾</div><div class="card">
+            <div class="job-top"><div><h3>Backend Developer &amp; Documentation Lead</h3><div class="org">SD Companies (Italy) · industry client project through RMIT</div></div><span class="when">Mar 2026 – Jun 2026</span></div>
+            <ul><li>Delivered a <b>production ERPNext system</b> in a four-person team, with regular direct client meetings and a university supervisor</li><li>Built <b>FatturaPA / SDI invoice validation</b> with precise, actionable rejection reasons</li><li>Built a <b>Frappe CRM pipeline</b> with RBAC and workflow automation; led all technical and requirements documentation</li></ul>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Frappe</span><span class="tag">ERPNext</span><span class="tag">Client management</span></div>
+          </div></div>
+          <div class="job rv"><div class="node">🤖</div><div class="card">
+            <div class="job-top"><div><h3>Software Team Member</h3><div class="org">RMIT Rover Team · student-led autonomous rover</div></div><span class="when">May 2026 – Present</span></div>
+            <ul><li>Write <b>embedded and control software</b> for a rover built from the ground up: Raspberry Pi, Pi Pico, Arduino, sensors and gimbal-mounted cameras</li><li>Code that runs on <b>real hardware</b>, where failure is immediate and visible</li><li>Work across software, electronics and mechanical engineering with Git and code review</li></ul>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Raspberry Pi</span><span class="tag">Arduino</span><span class="tag">Embedded</span><span class="tag">Robotics</span></div>
+          </div></div>
+          <div class="job rv"><div class="node">🐍</div><div class="card">
+            <div class="job-top"><div><h3>Python Programming Tutor</h3><div class="org">RMIT University</div></div><span class="when">Mar 2026 – Present</span></div>
+            <ul><li>Tutored <b>50+ students</b>, diagnosing bugs in unfamiliar code under time pressure and explaining the fix so it sticks</li><li>Taught data structures, functions, algorithms and debugging method in labs and workshops</li></ul>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Debugging</span><span class="tag">Technical support</span></div>
+          </div></div>
+          <div class="job rv"><div class="node">🎓</div><div class="card">
+            <div class="job-top"><div><h3>Peer Mentor</h3><div class="org">RMIT University · School of Computing Technologies</div></div><span class="when">Jan 2025 – Present</span></div>
+            <ul><li>Mentored students across <b>five subjects</b>: Programming Studio 1, Foundations of AI, Intro to Maths for Computing, Algorithms &amp; Analysis, Cloud Developing</li><li>Taught graph algorithms (MST, shortest path, max flow) to students meeting them for the first time</li></ul>
+            <div class="tags"><span class="tag">Mentoring</span><span class="tag">Algorithms</span><span class="tag">AI</span><span class="tag">Cloud</span></div>
+          </div></div>
+          <div class="job rv"><div class="node">🌐</div><div class="card">
+            <div class="job-top"><div><h3>Freelance Web Developer</h3><div class="org">Mascot Enterprise · machinery parts exporter (India)</div></div><span class="when">Freelance</span></div>
+            <ul><li>Designed, built and <b>deployed to production</b> the web presence for an exporter serving buyers in Asia, Europe and West Africa</li><li>React and Node.js, learnt on the job, shipped through a Netlify pipeline</li></ul>
+            <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Netlify</span></div>
+          </div></div>
+          <div class="job rv"><div class="node">🏟️</div><div class="card">
+            <div class="job-top"><div><h3>Food &amp; Beverage Attendant · Crew Member</h3><div class="org">Delaware North (MCG, Marvel Stadium, VRC) · Guzman y Gomez · Domino's</div></div><span class="when">May 2025 – Present</span></div>
+            <ul><li>High-volume service on stadium event days and peak rushes: POS, EFTPOS and cash, with order accuracy under pressure</li><li>The reason I stay calm when production breaks</li></ul>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="sec-head rv"><div><span class="chip purple">Portfolio</span><h2>Projects that <span class="grad">define my craft</span></h2></div>
+          <div class="filters" id="filters">
+            <button class="on" data-f="all">All</button><button data-f="industry">Industry</button><button data-f="ai">AI / ML</button><button data-f="web">Full-stack</button><button data-f="systems">Systems</button>
+          </div></div>
+        <div class="grid" id="grid"></div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="study">
+        <div class="sec-head rv"><div><span class="chip blue">Education</span><h2>What I've been <span class="grad">studying</span></h2></div><p>The coursework behind the projects, and what I took from each subject.</p></div>
+        <div class="edu rv">
+          <div class="logo">RMIT</div>
+          <div><h3>Bachelor of Computer Science (Professional)</h3><p>RMIT University, Melbourne · Minors in <b style="color:var(--text)">Artificial Intelligence &amp; Machine Learning</b> and <b style="color:var(--text)">Cloud Computing</b> · coursework 2024–2026, with a 12-month industry placement in 2027</p></div>
+          <span class="chip green">Placement year: 2027</span>
+        </div>
+        <div class="courses" id="courses"></div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="sec-head rv"><div><span class="chip green">Skills</span><h2>The <span class="grad">toolkit</span></h2></div><p>Everything here I've used in a project above, not only read about.</p></div>
+        <div class="skills">
+          <div class="sk rv" style="--c:var(--purple)"><h3><span>⌨️</span>Languages</h3><div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">C++</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">C#</span><span class="tag">Prolog</span><span class="tag">Bash</span><span class="tag">HTML/CSS</span></div></div>
+          <div class="sk rv" style="--c:var(--blue)"><h3><span>🧩</span>Backend &amp; Web</h3><div class="tags"><span class="tag">Spring Boot</span><span class="tag">REST APIs</span><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Frappe / ERPNext</span><span class="tag">Javalin</span><span class="tag">Thymeleaf</span><span class="tag">RBAC</span></div></div>
+          <div class="sk rv" style="--c:var(--yellow)"><h3><span>☁️</span>Cloud &amp; DevOps</h3><div class="tags"><span class="tag">AWS Lambda</span><span class="tag">API Gateway</span><span class="tag">DynamoDB</span><span class="tag">S3</span><span class="tag">SQS</span><span class="tag">SNS</span><span class="tag">Amplify</span><span class="tag">IAM</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span><span class="tag">Linux</span></div></div>
+          <div class="sk rv" style="--c:var(--green)"><h3><span>🧠</span>AI &amp; Data</h3><div class="tags"><span class="tag">PyTorch</span><span class="tag">Transformers</span><span class="tag">LoRA</span><span class="tag">CNNs</span><span class="tag">RAG</span><span class="tag">BM25 + dense retrieval</span><span class="tag">LLM evaluation</span><span class="tag">Reinforcement learning</span><span class="tag">scikit-learn</span><span class="tag">Pandas</span><span class="tag">NumPy</span></div></div>
+          <div class="sk rv" style="--c:var(--pink)"><h3><span>🗄️</span>Data stores</h3><div class="tags"><span class="tag">MySQL</span><span class="tag">SQLite</span><span class="tag">MongoDB</span><span class="tag">Neo4j</span><span class="tag">Flyway migrations</span><span class="tag">ERD design</span></div></div>
+          <div class="sk rv" style="--c:var(--orange)"><h3><span>🛠️</span>Ways of working</h3><div class="tags"><span class="tag">Agile</span><span class="tag">Jira</span><span class="tag">Code review</span><span class="tag">Unit testing</span><span class="tag">Test harnesses</span><span class="tag">Requirements elicitation</span><span class="tag">Technical docs</span><span class="tag">Copilot &amp; Claude Code</span></div></div>
+        </div>
+        <div class="marquee"><div class="track" id="track"></div></div>
+        <div class="certs">
+          <div class="cert rv" style="--c:var(--yellow)"><div class="ic">☁️</div><div><b>AWS Certified Cloud Practitioner</b><span>Amazon Web Services</span></div></div>
+          <div class="cert rv" style="--c:var(--purple)"><div class="ic">⚛️</div><div><b>Quantum Computing School</b><span>RMIT · Bayesian-optimisation project</span></div></div>
+          <div class="cert rv" style="--c:var(--green)"><div class="ic">🧒</div><div><b>Working with Children Check</b><span>Victoria · current</span></div></div>
+          <div class="cert rv" style="--c:var(--blue)"><div class="ic">🌏</div><div><b>Work rights</b><span>Student visa now · 485 on completion</span></div></div>
+        </div>
+      </section>
+
+      <!-- BEYOND -->
+      <section id="beyond">
+        <div class="sec-head rv"><div><span class="chip orange">Beyond code</span><h2>The rest of <span class="grad">the picture</span></h2></div></div>
+        <div class="beyond">
+          <div class="bcard rv"><span class="chip orange">Pressure-tested</span><h3>Stadium-sized crowds, then back to the code</h3><p>I work event days at some of Australia's biggest venues while studying full-time, tutoring, mentoring and building a rover. Thousands of customers, tight windows, zero tolerance for mistakes at the till. It's the most honest training for on-call I can think of. At the MCG I was recognised with a badge for my hard work, effort and dedication across the 2026 AFL season.</p>
+            <div class="venues"><span class="chip yellow">🏅 MCG recognition: 2026 AFL season</span><span class="chip yellow">🏏 MCG</span><span class="chip blue">🏟️ Marvel Stadium</span><span class="chip green">🏇 VRC</span><span class="chip pink">🌯 Guzman y Gomez</span><span class="chip purple">🍕 Domino's</span></div></div>
+          <div class="bcard rv"><span class="chip green">Community</span><h3>Showing up</h3><p>Volunteer at Vinnies (St Vincent de Paul, 2024). Regular at Melbourne Python meetups and RMIT industry events. I write about what I learn on LinkedIn. Off the keyboard: badminton, pickleball, and cooking something I've never cooked before.</p></div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="contact rv">
+          <span class="chip pink"><span class="live-dot"></span>Available January 2027</span>
+          <h2>Looking for someone who'll <span class="grad">own it</span> from the first sprint?</h2>
+          <p>I'm after a <b style="color:var(--text)">12-month industry placement from 2027</b> (the last requirement of my degree) or a graduate role in software, cloud or AI/ML. Melbourne-based, happy to relocate anywhere in Australia.</p>
+          <div class="cta">
+            <button class="btn btn-primary" id="copyEmail">Copy my email
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 012-2h10"/></svg></button>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/nitya-mungalpara" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+            <a class="btn btn-ghost" href="assets/Nitya_Mungalpara_CV.pdf" target="_blank" rel="noopener">Download CV ↗</a>
+          </div>
+          <div class="contact-grid">
+            <div class="cbox"><small>Email</small>nitya25mungalpara@gmail.com</div>
+            <div class="cbox"><small>Based in</small>Melbourne, VIC · open to relocate</div>
+            <div class="cbox"><small>Work rights</small>Student visa (500) · eligible for 485 with full work rights on completion</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer><span>© 2026 Nitya Mungalpara</span><span>Hand-built in HTML, CSS &amp; vanilla JS · no frameworks</span></footer>
+</div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="mbox"><button class="mclose" id="mclose" aria-label="Close">×</button><div id="mbody"></div></div></div>
+<div class="toast" id="toast">Email copied ✓</div>
+
+<script>
+const P=[
+ {id:'erpnext',cat:'industry',c:'var(--green)',glyph:'🧾',badge:'★ Industry client',title:'ERPNext e-Invoicing Compliance',sub:'SD Companies, Italy · 4-person team · 2026',
+  short:'Validates every outbound invoice against Italy\'s FatturaPA / SDI rules and rejects bad ones with reasons people can act on.',
+  stack:['Python','Frappe','ERPNext','FatturaPA','SDI','RBAC'],
+  problem:'Italian businesses must send every invoice through the government\'s SDI exchange in the FatturaPA format. A rejected invoice means delayed payment, and a vague rejection means hours of guessing.',
+  built:'A pre-submission validation layer inside ERPNext that checks field validity and format against the FatturaPA standard and SDI rules, then names the exact record and value that failed. Also a CRM-style sales pipeline on Frappe with role-based access control and workflow automation.',
+  impact:'Delivered to a real business, with regular client meetings throughout. I led the documentation the client and team worked from, and translated the client\'s tax requirements into system behaviour.'},
+ {id:'campushub',cat:'web',c:'var(--purple)',glyph:'📅',badge:'▶ Demo video',title:'Campus Hub: Event Platform',sub:'Java · Spring Boot · React · 6-person team · 2025',
+  short:'Full-stack event management with RBAC, organiser approvals, cron-scheduled reminders and a CI/CD pipeline. Delivered in a live client demo.',
+  stack:['Java','Spring Boot','React','MySQL','Docker','Flyway','GitHub Actions','Jira'],video:'assets/campus-hub-demo.mp4',
+  problem:'Students had no single place to find, RSVP to and get reminded about campus events. Organisers had no approval or feedback loop.',
+  built:'I owned the RSVP notification flow, automated pre-event email reminders (cron-scheduled, tracked in the database), the multi-image event gallery and the home page. The platform has REST CRUD APIs in Spring Boot on MySQL, a React front end, RBAC across students, organisers and admins, an admin approval queue, and time-gated feedback. It ships through Docker, Flyway migrations, unit tests and GitHub Actions.',
+  impact:'I also coordinated delivery: ran client and team meetings, kept minutes, and worked through slipping tasks with their owners. We closed with a live demo and an open Q&A defending our technical decisions.'},
+ {id:'memes',cat:'ai',c:'var(--pink)',glyph:'🧠',badge:'In progress · Oct 2026',title:'Detecting Persuasion in Memes',sub:'Deep Learning · PyTorch · RoBERTa',
+  short:'Multi-label classifier and span tagger for 20 propaganda techniques, with a hand-built LoRA and a custom label-attention head.',
+  stack:['PyTorch','RoBERTa','LoRA (hand-built)','Multi-label','Span tagging','AWS SageMaker T4'],
+  problem:'Spot which of 20 persuasion techniques (name-calling, smears, loaded language…) a meme uses, and exactly where in the text. The data is tiny (750 memes) and heavily imbalanced, with some techniques appearing only once or twice.',
+  built:'A RoBERTa-base pipeline comparing frozen-encoder and fine-tuning strategies, LoRA implemented from scratch, and my own label-attention head (one learned query per technique). Iterative-stratified 5-fold CV, per-technique thresholds, the official character-overlap span metric re-implemented and verified, and a sealed test set. It fits a 16 GB T4.',
+  impact:'Found real data issues along the way: off-by-one span offsets caused by zero-width spaces, and a metric quirk where a "highlight everything" baseline beats the 2021 competition winner. Also covers bias analysis, a zero-shot LLM comparison and a deployment-readiness review.'},
+ {id:'rag',cat:'ai',c:'var(--blue)',glyph:'🔎',badge:'Kaggle · Oct 2026',title:'RAG Opinion Estimator',sub:'Information Retrieval · Python · LLMs',
+  short:'Retrieves evidence from Reddit and estimates how the public would answer Pew survey questions, on a $3 API budget.',
+  stack:['Python','BM25 / Whoosh','Dense embeddings','Rocchio PRF','RRF hybrid','LLM-as-judge'],
+  problem:'Given a Pew survey question, find the 100 most supportive Reddit posts and predict the share of people who\'d choose each answer, judged on a Kaggle leaderboard (MAP@100 and distribution accuracy).',
+  built:'BM25 and dense retrieval with Rocchio pseudo-relevance feedback, fused with reciprocal rank fusion. An LLM judge (chain-of-thought vs direct prompting) labels evidence, then confidence-weighted aggregation with smoothing turns it into a distribution. Concurrency, 429 back-off and per-run token accounting keep it inside a $3 budget.',
+  impact:'Every design choice is compared head to head and logged, so the write-up explains why each piece earns its cost.'},
+ {id:'gesture',cat:'ai',c:'var(--yellow)',glyph:'🚁',badge:'27.7 / 30 · HD',title:'Drone Gesture Recognition',sub:'Deep Learning · PyTorch · CNNs',
+  short:'Classifies 13 hand signals from 5-frame clips for a delivery drone, using a 2-D CNN small enough for an embedded board.',
+  stack:['PyTorch','torchvision','CNN','Multi-frame fusion','Macro-F1'],
+  problem:'A delivery drone needs to read a receiver\'s hand signals. The brief: 5 frames in, 1 of 13 gestures out, 2-D convolutions only, small enough for embedded hardware, and it must work on a person it has never seen.',
+  built:'A single-frame baseline, then a multi-frame architecture with a fusion head that uses all five frames inside the 2-D-only constraint. Instance-consistent augmentation, subject-held-out evaluation, no-skill floors fixed before training, and macro-F1 chosen from the measured class imbalance.',
+  impact:'Scored 27.7/30 (High Distinction) on approach, judgement and analysis.'},
+ {id:'pacman',cat:'ai',c:'var(--orange)',glyph:'🟡',badge:'25 / 25 autograder',title:'Reinforcement Learning Pac-Man',sub:'Artificial Intelligence · Python',
+  short:'Value iteration, Q-learning and approximate Q-learning agents that learn to play Pac-Man.',
+  stack:['Python','MDPs','Value iteration','Q-learning','Approximate Q-learning'],
+  problem:'Teach agents to act well in a world they only learn about by trial and error.',
+  built:'Value-iteration planning over MDPs, tabular Q-learning with ε-greedy exploration, and feature-based approximate Q-learning that scales to full Pac-Man boards. I profiled and removed redundant Q-value lookups to bring a slow test from the 20s timeout down to about 10s.',
+  impact:'Full marks on the autograder (25/25).'},
+ {id:'prolog',cat:'systems',c:'var(--green)',glyph:'⛏️',badge:'Logic programming',title:'Minecraft Crafting Planner',sub:'Artificial Intelligence · Prolog',
+  short:'Works out the raw materials, tools, cost and duplicate-free build order for any Minecraft item, in pure Prolog.',
+  stack:['Prolog','Recursion','Knowledge representation','Unit testing'],
+  problem:'Given a recipe database, answer: what raw ingredients, tools and blueprints does this item need, what does it cost, and in what order should I build it?',
+  built:'Recursive reasoning over recipes in pure Prolog, with no cuts, if-then-else or findall allowed. It decomposes items to raw ingredients, resolves tools and blueprints, totals build cost, and produces a dependency-ordered build plan with repeats removed. Includes my own extra unit tests.',
+  impact:'A constrained-language exercise in thinking declaratively, with every predicate documented and tested.'},
+ {id:'maze',cat:'systems',c:'var(--blue)',glyph:'🧱',badge:'Tests nobody asked for',title:'Minecraft Maze Generator & Solver',sub:'C++ · mcpp API · 2024',
+  short:'Generates mazes with recursive backtracking and solves them with a wall-follower, plus a Bash black-box test harness I chose to add.',
+  stack:['C++','Recursive backtracking','Wall follower','Bash','Black-box testing'],
+  problem:'Build a maze in a live Minecraft world and have an agent solve it.',
+  built:'Procedural generation with recursive backtracking and a right-hand wall-follower solver against the Minecraft C++ API.',
+  impact:'I wrote a Bash black-box test harness that wasn\'t part of the assignment, because I wanted to know it worked rather than assume it.'},
+ {id:'mascot',cat:'web',c:'var(--yellow)',img:'assets/mascot.webp',badge:'● Live in production',title:'Mascot Enterprise',sub:'Freelance · React · Node.js',
+  short:'Production website for a diesel-engine and agricultural machinery parts exporter serving Asia, Europe and West Africa.',
+  stack:['React','Node.js','Netlify','Responsive design'],link:'https://mascot-business.netlify.app',
+  problem:'An export business needed a credible web presence for international buyers.',
+  built:'Designed and built the site in React and Node.js, learning both on the job, and structured it around the product range to drive buyer enquiries.',
+  impact:'Deployed to production through Netlify and live today.'},
+ {id:'food',cat:'web',c:'var(--green)',glyph:'🌾',badge:'Studio project',title:'Food Loss & Waste Explorer',sub:'Java · Javalin · SQLite · 2025',
+  short:'Interactive web app showing where food is lost along the supply chain, and why.',
+  stack:['Java','Javalin','Thymeleaf','SQLite','HTML/CSS'],
+  problem:'Make global food-loss data understandable: loss rates, causes and mitigations at each supply-chain stage.',
+  built:'A modular Java backend with Javalin routing, server-side rendering with Thymeleaf, SQLite persistence and comparison and visualisation features across stages.',
+  impact:'Clean, modular architecture built for a studio team.'},
+ {id:'quantum',cat:'ai',c:'var(--purple)',glyph:'⚛️',badge:'Certified program',title:'Quantum Noise Mitigation',sub:'RMIT Quantum Computing School',
+  short:'Used Bayesian optimisation to tune error mitigation on noisy quantum circuits.',
+  stack:['Python','Bayesian optimisation','Quantum circuits'],
+  problem:'Today\'s quantum computers are noisy; results drift unless mitigation parameters are tuned well.',
+  built:'A project applying Bayesian optimisation to search mitigation settings efficiently rather than by brute force.',
+  impact:'Completed RMIT\'s certified Quantum Computing School.'},
+ {id:'rover',cat:'systems',c:'var(--pink)',glyph:'🛰️',badge:'Ongoing',title:'RMIT Rover',sub:'Student-led robotics team · 2026',
+  short:'Software for an autonomous and teleoperated rover: Raspberry Pi, Pico, Arduino, sensors and gimbal cameras.',
+  stack:['Python','Raspberry Pi','Pi Pico','Arduino','Sensors','Git'],
+  problem:'Build a rover from the ground up that can be driven remotely and act on its own.',
+  built:'Embedded and control software in the software subsystem, integrating sensors and gimbal-mounted cameras.',
+  impact:'Cross-disciplinary teamwork with electronics and mechanical engineers, on hardware where bugs are physical.'}
+];
+const C=[
+ ['COSC2779','Deep Learning','Transformers, LoRA, CNNs and rigorous evaluation. Built the gesture and meme projects.','var(--pink)'],
+ ['COSC1127','Artificial Intelligence','Search, logic programming in Prolog, MDPs and reinforcement learning.','var(--orange)'],
+ ['ISYS1079','Semi-structured & Unstructured Data','Retrieval (BM25, dense, hybrid), RAG and LLM-based evaluation.','var(--blue)'],
+ ['Programming Project 1','Industry Client Project','Requirements, delivery and documentation for SD Companies, Italy.','var(--green)'],
+ ['COSC2299','SE: Process & Tools','Agile, Jira, code review, CI/CD and Docker. Delivered Campus Hub.','var(--purple)'],
+ ['COSC2123','Algorithms & Analysis','Complexity, graphs (MST, shortest path, max flow), data structures. Now mentoring it.','var(--yellow)'],
+ ['Cloud Developing','Cloud Computing minor','Serverless on AWS: Lambda, API Gateway, DynamoDB, S3, SQS, SNS, Amplify, IAM.','var(--yellow)'],
+ ['COSC3045','Essentials of Computing','Automata, grammars, Turing machines and decidability.','var(--blue)'],
+ ['Database Systems','Data modelling','Relational design, ERDs and SQL.','var(--pink)'],
+ ['SE Fundamentals','Software Engineering','Requirements, design, testing and the SDLC.','var(--green)'],
+ ['Programming Studio 1 & 2','Studio projects','Team builds in Java and Python, including the Food Loss & Waste app.','var(--purple)'],
+ ['Foundations of AI','AI & ML minor','Core AI and ML concepts. Now mentoring it.','var(--orange)']
+];
+const grid=document.getElementById('grid');
+grid.innerHTML=P.map(p=>`<button class="pcard rv" data-cat="${p.cat}" data-open="${p.id}" style="--c:${p.c}">
+  <div class="pthumb">${p.img?`<img src="${p.img}" alt="${p.title}" loading="lazy">`:`<span class="glyph">${p.glyph}</span><span class="code">${p.stack.slice(0,3).join(' · ')}</span>`}<span class="badge ${p.badge.startsWith('★')?'hot':''}">${p.badge}</span></div>
+  <div class="pbody"><h3>${p.title}</h3><p>${p.short}</p><div class="tags">${p.stack.slice(0,4).map(s=>`<span class="tag">${s}</span>`).join('')}</div><span class="pmore">Read the case study →</span></div></button>`).join('');
+document.getElementById('courses').innerHTML=C.map(c=>`<div class="course rv" style="--c:${c[3]}"><span class="code">${c[0]}</span><h3>${c[1]}</h3><p>${c[2]}</p></div>`).join('');
+const tech=['Java','Spring Boot','Python','PyTorch','React','AWS','Docker','GitHub Actions','MySQL','Frappe','C++','Transformers','Node.js','Linux','REST APIs','RAG','Prolog','Raspberry Pi'];
+document.getElementById('track').innerHTML=[...tech,...tech].map(t=>`<span>${t}</span>`).join('');
+
+// filters
+document.getElementById('filters').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  document.querySelectorAll('#filters button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('.pcard').forEach(c=>c.classList.toggle('hide',b.dataset.f!=='all'&&c.dataset.cat!==b.dataset.f));});
+
+// modal
+const modal=document.getElementById('modal'),mbody=document.getElementById('mbody');
+function openP(id){const p=P.find(x=>x.id===id);if(!p)return;
+  mbody.innerHTML=`<div class="mhead" style="--c:${p.c}"><span class="chip purple">${p.badge}</span><h3>${p.title}</h3><div class="sub">${p.sub}</div></div>
+  ${p.video?`<div class="mvideo"><video src="${p.video}" controls preload="metadata" playsinline></video></div>`:''}
+  <div class="mcontent"><div><h4>The problem</h4><p>${p.problem}</p></div><div><h4>What I built</h4><p>${p.built}</p></div><div><h4>Outcome</h4><p>${p.impact}</p></div>
+  <div><h4>Stack</h4><div class="tags">${p.stack.map(s=>`<span class="tag">${s}</span>`).join('')}</div></div>
+  ${p.link?`<div class="mlinks"><a class="btn btn-primary" href="${p.link}" target="_blank" rel="noopener">Visit live site ↗</a></div>`:''}</div>`;
+  modal.classList.add('open');document.body.style.overflow='hidden';}
+function closeM(){modal.classList.remove('open');document.body.style.overflow='';const v=mbody.querySelector('video');if(v)v.pause();}
+document.addEventListener('click',e=>{const o=e.target.closest('[data-open]');if(o)openP(o.dataset.open);});
+document.getElementById('mclose').onclick=closeM;modal.addEventListener('click',e=>{if(e.target===modal)closeM();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM();});
+
+// rotator
+const words=['Software Engineer','Backend Developer','AI / ML Builder','Cloud Engineer (AWS Certified)','Full-stack Developer','Python Tutor'];
+let wi=0,ci=words[0].length,del=true;const rot=document.getElementById('rot');
+(function tick(){const w=words[wi];if(del){ci--;if(ci<=0){del=false;wi=(wi+1)%words.length;}}else{ci++;if(ci>=words[wi].length){del=true;rot.textContent=words[wi];return setTimeout(tick,1900);}}
+  rot.textContent=words[wi].slice(0,Math.max(ci,0));setTimeout(tick,del?40:75);})();
+
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);
+  e.target.querySelectorAll('[data-count]').forEach(n=>{const t=+n.dataset.count,d=+(n.dataset.dec||0),t0=performance.now();
+    (function f(now){const k=Math.min((now-t0)/1400,1),v=t*(1-Math.pow(1-k,3));n.textContent=v.toFixed(d);if(k<1)requestAnimationFrame(f);})(t0);});}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// active nav
+const links=[...document.querySelectorAll('#nav a')];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const id=e.target.id==='featured'?'home':e.target.id;links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+id));}}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('main section').forEach(s=>so.observe(s));
+
+// mobile menu
+const side=document.getElementById('side');document.getElementById('menuBtn').onclick=()=>side.classList.toggle('open');
+links.forEach(l=>l.addEventListener('click',()=>side.classList.remove('open')));
+
+// cursor glow
+const glow=document.getElementById('glow');addEventListener('pointermove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px';});
+
+// copy email
+document.getElementById('copyEmail').onclick=async()=>{const t=document.getElementById('toast');
+  try{await navigator.clipboard.writeText('nitya25mungalpara@gmail.com');t.textContent='Email copied ✓';}catch(e){t.textContent='nitya25mungalpara@gmail.com';}
+  t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200);};
+</script>
+</body>
+</html>
